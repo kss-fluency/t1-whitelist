@@ -5,6 +5,11 @@
   "repository": "git@github.com:kss-fluency/t1-whitelist.git",
   "author": "Krzysztof Spisak-Spisacki <krysztof.spisak.spisacki@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "clean": "npx hardhat clean",
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
     "@nomicfoundation/hardhat-ethers": "^3.0.0",
