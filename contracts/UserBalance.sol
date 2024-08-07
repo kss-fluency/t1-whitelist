@@ -6,7 +6,7 @@ contract UserBalance {
     mapping(address => mapping (address => uint256)) private erc20balances;
     mapping(address => bool) public whitelist;
 
-    constructor(address whitelisted){
+    constructor(address whitelisted) {
         whitelist[whitelisted] = true;
     }
 
