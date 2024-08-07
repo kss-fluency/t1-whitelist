@@ -16,7 +16,7 @@ contract UserBalance {
         _changeEthBalance(userToChange, amount);
     }
 
-    function getEthBalance(address user) external view onlyWhitelisted returns(uint256)  {
+    function getEthBalance(address user) external view returns(uint256)  {
         return ethBalances[user];
     }
 
@@ -26,7 +26,7 @@ contract UserBalance {
         _changeERC20balance(erc20coin, userToChange, amount);
     }
 
-    function getERC20balance(address erc20coin, address user) external view onlyWhitelisted returns(uint256)  {
+    function getERC20balance(address erc20coin, address user) external view returns(uint256)  {
         return erc20balances[erc20coin][user];
     }
 
